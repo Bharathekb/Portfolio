@@ -1,13 +1,118 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Inter;
+}
+.F-400 {
+  font-weight: 400;
+}
+.F-500 {
+  font-weight: 500;
+}
+.F-600 {
+  font-weight: 600;
+}
+.F-700 {
+  font-weight: 700;
+}
+.F-800 {
+  font-weight: 800;
+}
+.FS-20 {
+  font-size: 16px;
+}
+.FS-24 {
+  font-size: 24px;
+}
+.FS-32 {
+  font-size: 32px;
+}
+.FS-42 {
+  font-size: 42px;
+}
+.Myline {
+  margin-top: 1px solid #d1d1d1;
+}
+.container {
+  max-width: 1440px;
+}
+.my-heading {
+  color: #18191f;
+  font-size: 52px;
+  font-style: normal;
+  line-height: 143%;
+  letter-spacing: -1.12px;
+}
+.my-para {
+  color: #18191f;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 133%;
+  margin-bottom: 0;
+}
+.Black-bg {
+  background-color: #000000;
+}
+.Gray-bg {
+  background-color: #f8f9fb;
+}
+.My-bioleft .my-heading {
+  color: #ffffff;
+}
+.My-bioright {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+.My-bioright img {
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.orange-color {
+  color: #ffd416 !important;
+}
+.White-color {
+  color: #fff !important;
+}
+.L-sidecontent,
+.R-sidecontent {
+  width: 50%;
+}
+.Img-border {
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.img-position {
+  position: absolute;
+}
+.box-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.heading-2 {
+  color: #18191f;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 143%;
+  letter-spacing: -1.12px;
+}
+.heading-3 {
+  color: #18191f;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 143%;
+  letter-spacing: -1.12px;
+}
+.red-color {
+  color: #eb2411;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Ex-box {
+  padding: 15px;
+  margin: 20px 120px;
+  color: #ffd416;
+  background-color: #e4e6e3;
+  background: rgba(0, 0, 0, 0.3);
 }

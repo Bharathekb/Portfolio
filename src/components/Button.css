@@ -1,0 +1,56 @@
+.my-btn {
+  border: 1px solid #dae0e6;
+  color: #272d37;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  padding: 10px 16px;
+}
+.my-btn:focus,
+.my-btn:hover,
+.my-btn:active {
+  background-color: #191a15;
+  color: #ffffff;
+}
+.btn-blackbg {
+  background-color: #191a15;
+  color: #ffffff;
+}
+.btn-whitebg {
+  background-color: #ffffff;
+  color: #000000;
+}
+.btn-orangebg {
+  background-color: #ffd416 !important;
+  color: #000000 !important;
+}
+
+.my-progress {
+  background-color: #e9ecef; /* Light background for progress container */
+}
+.my-progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  transition: width 5s ease;
+}
+.progress-bar-custom {
+  width: 0%;
+  transition: width 2s ease;
+  -webkit-transition: width 2s ease;
+  -moz-transition: width 2s ease;
+  -ms-transition: width 2s ease;
+  -o-transition: width 2s ease;
+}
+
+.progress-bar-custom.animate {
+  width: 75%; /* Final width for animation */
+}

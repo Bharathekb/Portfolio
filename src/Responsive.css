@@ -1,0 +1,13 @@
+@media (max-width: 1600px) {
+  .container {
+    max-width: 85%;
+  }
+}
+@media (max-width: 1400px) {
+  .my-heading {
+    width: 100%;
+  }
+  .my-para {
+    font-size: 18px;
+  }
+}
