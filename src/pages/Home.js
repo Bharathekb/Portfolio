@@ -4,6 +4,8 @@ import Aboutme from "../components/Aboutme";
 import Introduction from "../components/Introduction";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 function Home() {
   return (
     <div>
@@ -13,8 +15,9 @@ function Home() {
         <Aboutme />
         <Skills />
         <Experience />
+        <Projects/>
       </main>
-      <br /> <br /> <br />
+      <Footer/>
     </div>
   );
 }
