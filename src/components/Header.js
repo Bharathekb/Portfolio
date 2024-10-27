@@ -3,7 +3,7 @@ import "./Header.css";
 import Button from "./Button";
 function Header() {
   const handleBlogClick = () => {
-    window.location.href = "http://bharathblog.unaux.com/";
+    window.location.href = "https://bharathblog.unaux.com/contact";
   };
   return (
     <div className="header">
@@ -36,13 +36,16 @@ function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link F-500 " href="#">
-                  Link
+                <a
+                  className="nav-link F-500 "
+                  href="https://bharathblog.unaux.com"
+                >
+                  Blog
                   <hr />
                 </a>
               </li>
             </ul>
-            <Button text="Blog" onClick={handleBlogClick} />
+            <Button text="Contact" onClick={handleBlogClick} />
           </div>
         </div>
       </nav>
