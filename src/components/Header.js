@@ -9,7 +9,7 @@ function Header() {
     <div className="header">
       <nav className="navbar navbar-expand-lg custom-navbar">
         <div className="container py-2">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="https://bharathportfolio.rf.gd/">
             <img src="./assets/My-logo.png" alt="site logo" />
           </a>
           <button
@@ -23,8 +23,11 @@ function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto">
+          <div
+            className="collapse navbar-collapse mt-3 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav m-auto d-block d-lg-flex">
               <li className="nav-item">
                 <a
                   className="nav-link active F-500"

@@ -2,9 +2,9 @@ import React from "react";
 
 const Aboutme = () => {
   return (
-    <section className="about-me py-4 my-4">
+    <section className="about-me py-4 pb-3 my-3 py-xl-5 my-xl-5">
       <div className="container">
-        <div className="d-flex py-5 gap-5">
+        <div className="d-flex gap-5 PF-flex-column PF-column-reverse">
           <div className="L-sidecontent">
             <div className="Img-border">
               <img

@@ -7,7 +7,7 @@ const Introduction = () => {
   return (
     <section className="Black-bg">
       <div className="container My-bio">
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center flexcolumn">
           <div className="My-bioleft">
             <h1 className="my-heading F-600">I'm Bharath E</h1>
             <h2 className="my-heading orange-color F-600">Web Developer</h2>

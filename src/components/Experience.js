@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section className="Experience py-4 Black-bg my-4">
       <div className="container">
-        <div className="d-flex py-5 gap-5">
+        <div className="d-flex py-5 gap-5 PF-flex-column">
           <div className="L-sidecontent text-center">
             <div className="Ex-box">
               <div className="FS-24 mb-2">
