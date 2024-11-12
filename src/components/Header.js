@@ -34,7 +34,7 @@ function Header() {
                   aria-current="page"
                   href="#"
                 >
-                  Home sony
+                  Home
                   <hr />
                 </a>
               </li>
