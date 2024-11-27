@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 const Introduction = () => {
   const handleDownloadClick = () => {
-    window.location.href = "http://bharathblog.unaux.com/";
+    window.location.href = "assets/Bharath-resume.pdf";
   };
   return (
     <section className="Black-bg">
