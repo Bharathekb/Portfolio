@@ -7,10 +7,14 @@ const Progressbar = () => {
 
   // Array of skills with their progress values
   const skills = [
-    { name: "HTML", progress: 90 },
-    { name: "CSS", progress: 90 },
-    { name: "JavaScript", progress: 80 },
-    { name: "React", progress: 80 },
+    { name: "HTML", progress: 95 },
+    { name: "CSS", progress: 95 },
+    { name: "Bootstrap", progress: 95 },
+    { name: "JavaScript", progress: 70 },
+    { name: "Jquery", progress: 80 },
+    { name: "React", progress: 60 },
+    { name: "Wordpress", progress: 80 },
+    { name: "Photoshop", progress: 70 },
   ];
 
   useEffect(() => {

@@ -4,19 +4,27 @@ const projectData = [
   {
     id: 1,
     name: "Hireguard",
+    desc: [
+      "I contributed as a UI Developer to the HireGuard project, a platform designed to identify and prevent backdoor hires.",
+      "My role involved building and enhancing the user interface using Angular for the front end, ensuring a dynamic and responsive user experience. Collaborating closely with backend developers working in .NET, I helped integrate seamless functionality and design, delivering an efficient and intuitive platform.",
+    ],
     imgSrc: "../assets/Project1.png",
   },
   {
     id: 2,
     name: "Itelecenter backofice",
+    desc: [
+      "iTeleCenter is a versatile business calling software designed to enhance communication for businesses by providing reliable local and toll-free phone numbers.",
+      "It offers a comprehensive suite of features that support seamless call management, making it an ideal solution for entrepreneurs, small businesses, and enterprises. With iTeleCenter, businesses can manage incoming and outgoing calls efficiently using advanced tools like call forwarding, voicemail, auto-attendants, and text messaging. Its integration with local numbers allows businesses to establish a professional presence in specific geographic regions, fostering trust and improving customer engagement.",
+    ],
     imgSrc: "../assets/Project2.png",
   },
   {
     id: 3,
     name: "Portfolio",
+    desc: [],
     imgSrc: "../assets/Project3.png",
   },
-  // Add more projects as needed
 ];
 
 function Projects() {
@@ -47,7 +55,7 @@ function Projects() {
                   />
                 </div>
                 <div className="My-card-body">
-                  <p className="mb-0">{project.name}</p>
+                  <h4 className="mb-0 text-center py-3">{project.name}</h4>
                 </div>
               </div>
             </div>
@@ -62,14 +70,23 @@ function Projects() {
           onClick={closeModal}
         >
           <div
-            className="My-modal-content"
+            className="My-modal-content custom-scroll"
             onClick={(e) => e.stopPropagation()}
           >
             <span className="close" onClick={closeModal}>
               &times;
             </span>
             <img src={selectedProject.imgSrc} alt={selectedProject.name} />
-            <p className="mb-0">{selectedProject.name}</p>
+            <h3 className="my-3">{selectedProject.name}</h3>
+            <div className="mb-0 text-start">
+              {Array.isArray(selectedProject.desc)
+                ? selectedProject.desc.map((paragraph, index) => (
+                    <p className="text-start" key={index}>
+                      {paragraph}
+                    </p>
+                  ))
+                : selectedProject.desc && <p>{selectedProject.desc}</p>}
+            </div>
           </div>
         </div>
       )}

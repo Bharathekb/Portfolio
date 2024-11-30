@@ -4,6 +4,9 @@ const Introduction = () => {
   const handleDownloadClick = () => {
     window.location.href = "assets/Bharath-resume.pdf";
   };
+  const handleblogClick = () => {
+    window.location.href = "https://bharathportfolio.rf.gd/blog/";
+  };
   return (
     <section className="Black-bg">
       <div className="container My-bio">
@@ -14,11 +17,18 @@ const Introduction = () => {
             <p className="my-para White-color">
               I Can Build Websites Responsively
             </p>
-            <Button
-              text="Download CV"
-              className="mt-4 btn-orangebg"
-              onClick={handleDownloadClick}
-            />
+            <div className="mt-4 d-flex gap-2">
+              <Button
+                text="Download CV"
+                className="btn-orangebg"
+                onClick={handleDownloadClick}
+              />
+              <Button
+                text="Blog"
+                className="btn-orangebg"
+                onClick={handleblogClick}
+              />
+            </div>
           </div>
           <div className="My-bioright">
             <img src="./assets/my-profile.jpg" alt="profile" />

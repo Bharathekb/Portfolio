@@ -41,7 +41,7 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link F-500 "
-                  href="https://bharathblog.unaux.com"
+                  href="https://bharathportfolio.rf.gd/blog/"
                 >
                   Blog
                   <hr />
