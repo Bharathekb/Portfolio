@@ -259,3 +259,6 @@ body {
   cursor: pointer;
   color: #000;
 }
+.my-row-reverse {
+  flex-direction: row-reverse;
+}

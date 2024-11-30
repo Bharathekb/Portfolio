@@ -70,7 +70,7 @@ const Aboutme = () => {
       </section>
       <section className="about-me py-4 pb-3 my-3 py-xl-5 my-xl-5">
         <div className="container">
-          <div className="d-flex gap-5 flex-row-reverse PF-flex-column PF-column-reverse">
+          <div className="d-flex gap-5 my-row-reverse PF-flex-column PF-column-reverse">
             <div className="L-sidecontent">
               <div className="Img-border">
                 <img
