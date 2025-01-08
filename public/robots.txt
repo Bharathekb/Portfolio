@@ -1,3 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for https://bharathportfolio.rf.gd/
+
 User-agent: *
-Disallow:
+Disallow: /*/feed/
+Disallow: /*?i=1
+
+# Allow blog and root directories
+Allow: /blog/
+Allow: /
+
+# Single Sitemap for React + Blog Combined
+Sitemap: https://bharathportfolio.rf.gd/sitemap.xml
+Sitemap: https://bharathportfolio.rf.gd/blog/sitemap_index.xml
