@@ -31,7 +31,7 @@ const Introduction = () => {
             </div>
           </div>
           <div className="My-bioright">
-            <img src="./assets/my-profile.jpg" alt="profile" />
+            <img src="./assets/my-profile.png" alt="profile" />
           </div>
         </div>
       </div>

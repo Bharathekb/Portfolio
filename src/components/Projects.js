@@ -41,7 +41,7 @@ function Projects() {
   return (
     <section className="Projects py-5 my-4">
       <div className="container">
-        <h2 class="heading-2 text-center F-600 mb-5">My Projects</h2>
+        <h2 className="heading-2 text-center F-600 mb-5">My Projects</h2>
         <div className="row g-4">
           {projectData.map((project) => (
             <div className="col-xl-4 col-md-6" key={project.id}>
