@@ -3,7 +3,7 @@ import "./Header.css";
 import Button from "./Button";
 function Header() {
   const handleBlogClick = () => {
-    window.location.href = "https://bharathblog.unaux.com/contact";
+    window.location.href = "https://bharathportfolio.rf.gd/blog/contact-us/";
   };
   return (
     <div className="header">
