@@ -1,16 +1,19 @@
 @media (max-width: 1600px) {
   .container {
-    max-width: 95%;
+    max-width: 85%;
   }
 }
+
 @media (max-width: 1400px) {
   .my-heading {
     width: 100%;
     font-size: 42px;
   }
+
   .my-para {
     font-size: 18px;
   }
+
   .Img-border {
     height: 750px;
   }
@@ -18,93 +21,127 @@
 
 @media (max-width: 1024px) {
   .PF-flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .My-bioleft {
     width: 50%;
   }
+
   .My-bioright {
     width: 50%;
     height: 500px;
   }
+
   .my-para {
     font-size: 16px;
   }
+
   .my-heading {
     font-size: 36px;
   }
+
   .heading-2 {
     font-size: 28px;
   }
+
   .heading-3 {
     font-size: 18px;
   }
+
   .heading-2 {
     font-size: 24px;
   }
+
   .L-sidecontent,
   .R-sidecontent {
     width: 100%;
   }
+
   .Img-border {
     width: 69%;
     height: 660px;
   }
+
   .FS-24 {
     font-size: 18px;
   }
+
   .Ex-box {
     margin: 20px 50px;
   }
+
   .My-modal-content {
     padding: 20px;
   }
+
   .My-modal-content .close {
     position: absolute;
     top: -8px;
     right: 5px;
   }
+
   .FS-42 {
     font-size: 32px;
   }
 }
+
 @media (max-width: 767px) {
   .flexcolumn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .PF-column-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
+
   .My-bioleft {
     width: 100%;
     padding: 32px 0;
   }
+
   .My-bioright {
     width: 100%;
     height: auto;
   }
+
   .My-card-header {
     height: 320px;
   }
+
   .Img-border {
     width: 100%;
     height: 850px;
   }
+
   .custom-navbar .navbar-nav .nav-link {
     display: inline-block;
   }
 }
+
 @media (max-width: 550px) {
   .container {
     max-width: 98%;
   }
+
   .my-heading {
     font-size: 28px;
   }
+
   .Img-border {
     width: 100%;
     height: 469px;
   }
+
   .Ex-box {
     margin: 10px 20px;
   }

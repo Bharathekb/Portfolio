@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header">
       <nav className="navbar navbar-expand-lg custom-navbar">
-        <div className="container py-2">
+        <div className="container py-2 px-0">
           <a className="navbar-brand" href="https://bharathportfolio.rf.gd/">
             <img src="./assets/My-logo.png" alt="site logo" />
           </a>

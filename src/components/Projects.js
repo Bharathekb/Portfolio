@@ -12,10 +12,9 @@ const projectData = [
   },
   {
     id: 2,
-    name: "Itelecenter backofice",
+    name: "Callmantra",
     desc: [
-      "iTeleCenter is a versatile business calling software designed to enhance communication for businesses by providing reliable local and toll-free phone numbers.",
-      "It offers a comprehensive suite of features that support seamless call management, making it an ideal solution for entrepreneurs, small businesses, and enterprises. With iTeleCenter, businesses can manage incoming and outgoing calls efficiently using advanced tools like call forwarding, voicemail, auto-attendants, and text messaging. Its integration with local numbers allows businesses to establish a professional presence in specific geographic regions, fostering trust and improving customer engagement.",
+      "CallMantra is a cloud-based calling and texting software for recruiting teams. Set up in minutes and integrate with 30+ ATSs with 1-click. Book live demo.",
     ],
     imgSrc: "../assets/Project2.png",
   },
@@ -81,10 +80,10 @@ function Projects() {
             <div className="mb-0 text-start">
               {Array.isArray(selectedProject.desc)
                 ? selectedProject.desc.map((paragraph, index) => (
-                    <p className="text-start" key={index}>
-                      {paragraph}
-                    </p>
-                  ))
+                  <p className="text-start" key={index}>
+                    {paragraph}
+                  </p>
+                ))
                 : selectedProject.desc && <p>{selectedProject.desc}</p>}
             </div>
           </div>
