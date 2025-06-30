@@ -80,14 +80,15 @@ body {
   font-style: normal;
   line-height: 143%;
   letter-spacing: -1.12px;
+  font-weight: 700;
 }
 
 .my-para {
-  color: #18191f;
+  color: #535862;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
-  line-height: 133%;
+  line-height: 32px;
   margin-bottom: 0;
 }
 
@@ -98,7 +99,9 @@ body {
 .Gray-bg {
   background-color: #f8f9fb;
 }
-
+.FA-bg {
+  background-color: #fafafa;
+}
 .My-bioleft .my-heading {
   color: #ffffff;
 }
@@ -125,18 +128,25 @@ body {
 
 .L-sidecontent,
 .R-sidecontent {
-  width: 50%;
+  width: 100%;
 }
 
 .Img-border {
-  height: 870px;
-  position: relative;
+  width: 100%;
+  background-size: cover;
   overflow: hidden;
+  background-position: center;
 }
 .Img-border img {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
+.Img-border1 {
+  background-image: url(../public/assets/Profile-summary-min.jpg);
+}
+.Img-border2 {
+  background-image: url(../public/assets/My-pic.jpg);
+  background-position: top;
+}
 .img-position {
   position: absolute;
 }

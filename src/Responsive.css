@@ -12,6 +12,7 @@
 
   .my-para {
     font-size: 18px;
+    list-style: 28px;
   }
 
   .Img-border {
@@ -38,6 +39,7 @@
 
   .my-para {
     font-size: 16px;
+    line-height: 24px;
   }
 
   .my-heading {
@@ -125,6 +127,9 @@
 
   .custom-navbar .navbar-nav .nav-link {
     display: inline-block;
+  }
+  .My-bioleft {
+    text-align: center;
   }
 }
 

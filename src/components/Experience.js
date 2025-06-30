@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays, faBookmark } from "@fortawesome/free-solid-svg-icons";
 const Experience = () => {
   return (
-    <section className="Experience py-4 Black-bg my-4">
+    <section className="Experience py-4 Black-bg">
       <div className="container">
         <div className="d-flex py-5 gap-5 PF-flex-column">
           <div className="L-sidecontent text-center">

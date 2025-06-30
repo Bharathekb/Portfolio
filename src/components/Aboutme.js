@@ -3,17 +3,11 @@ import React from "react";
 const Aboutme = () => {
   return (
     <div>
-      <section className="about-me py-4 pb-3 my-3 pt-xl-5 pb-xl-0 mt-xl-5">
+      <section className="about-me py-4 pb-3 pt-xl-5 pb-xl-0 mt-xl-5 ">
         <div className="container">
-          <div className="d-flex gap-5 PF-flex-column PF-column-reverse">
+          <div className="d-flex gap-5 flex-column PF-column-reverse">
             <div className="L-sidecontent">
-              <div className="Img-border">
-                <img
-                  src="./assets/Profile-summary-min.jpg"
-                  className="w-100 img-position img-fluid"
-                  alt="my-pic"
-                />
-              </div>
+              <div className="Img-border Img-border1"></div>
             </div>
             <div className="R-sidecontent">
               <div className="data-div">
@@ -25,15 +19,15 @@ const Aboutme = () => {
                   <span className="F-600">Job:</span> UI developer
                 </p>
                 <div className="mb-4">
-                  <h3 className="heading-3 red-color F-600">UI developer</h3>
+                  <h3 className="heading-3 F-600">UI developer</h3>
                   <hr className="Myline" />
                   <p className="my-para mb-3">
-                    I am a dedicated UI Developer at COA Network Private
-                    Limited, specializing in creating visually appealing,
-                    interactive, and user-friendly web interfaces. With a strong
-                    focus on delivering seamless user experiences, I combine
-                    creativity and technical expertise to transform ideas into
-                    functional digital solutions.
+                    I am a dedicated UI Developer with 3 years of experience at
+                    COA Network Private Limited, specializing in building
+                    responsive, visually appealing, and user-friendly web
+                    interfaces. I transform design concepts into functional
+                    digital solutions with a strong focus on seamless user
+                    experience, performance, and mobile responsiveness.
                   </p>
                   <p className="my-para mb-3">
                     My core skills include HTML, CSS, and Bootstrap, which I use
@@ -44,23 +38,18 @@ const Aboutme = () => {
                   </p>
                 </div>
                 <div className="mb-3">
-                  <h3 className="heading-3 red-color F-600">Experience</h3>
+                  <h3 className="heading-3 F-600">Experience</h3>
                   <hr className="Myline" />
                   <p className="my-para mb-3">
-                    I have 2 years of experience as a UI Developer at COA
-                    Network Private Limited, where I contributed to multiple
-                    projects by creating intuitive and responsive user
-                    interfaces. My role involved close collaboration with
-                    backend developers and designers to ensure seamless
-                    integration of functionality and design, resulting in
-                    high-quality digital products.
-                  </p>
-                  <p className="my-para mb-3">
-                    In these projects, I utilized my expertise in HTML, CSS,
-                    Bootstrap, JavaScript, and jQuery to build engaging and
-                    user-friendly web interfaces. I ensured designs were
-                    accurately translated into functional code while optimizing
-                    for performance and cross-device compatibility.
+                    Over the past 3 years, I have contributed to multiple
+                    projects at COA Network Private Limited, working closely
+                    with designers and backend developers to deliver
+                    high-quality UI components. I played a key role in
+                    implementing structured and responsive layouts using HTML,
+                    CSS, and Bootstrap, while enhancing interactivity with
+                    JavaScript and jQuery. My focus has always been on
+                    performance optimization and ensuring consistency across
+                    devices and browsers.
                   </p>
                 </div>
               </div>
@@ -68,17 +57,11 @@ const Aboutme = () => {
           </div>
         </div>
       </section>
-      <section className="about-me py-4 pb-3 my-3 py-xl-5 my-xl-5">
+      <section className="about-me py-4 py-xl-5 FA-bg">
         <div className="container">
-          <div className="d-flex gap-5 my-row-reverse PF-flex-column PF-column-reverse">
+          <div className="d-flex gap-5 flex-column">
             <div className="L-sidecontent">
-              <div className="Img-border">
-                <img
-                  src="./assets/My-pic.jpg"
-                  className="w-100 img-position"
-                  alt="my-pic"
-                />
-              </div>
+              <div className="Img-border Img-border2"></div>
             </div>
             <div className="R-sidecontent">
               <div className="data-div">
@@ -87,9 +70,7 @@ const Aboutme = () => {
                   <span className="F-600">Name:</span> Ekboti Bharath Chandra
                 </p>
                 <div className="mb-4">
-                  <h3 className="heading-3 red-color F-600">
-                    Academic Background
-                  </h3>
+                  <h3 className="heading-3 F-600">Academic Background</h3>
                   <hr className="Myline" />
                   <p className="my-para mb-3">
                     SSC Passed Out With 80% In 2013 Z.P.H.S High School
@@ -104,7 +85,7 @@ const Aboutme = () => {
                   </p>
                 </div>
                 <div className="mb-3">
-                  <h3 className="heading-3 red-color F-600">Profile</h3>
+                  <h3 className="heading-3 F-600">Profile</h3>
                   <hr className="Myline" />
                   <p className="my-para mb-3">
                     <span className="F-600">Language:</span> Telugu, English,

@@ -17,7 +17,7 @@ const Introduction = () => {
             <p className="my-para White-color">
               I Can Build Websites Responsively
             </p>
-            <div className="mt-4 d-flex gap-2">
+            <div className="mt-4 d-flex gap-3 justify-content-center justify-content-md-start">
               <Button
                 text="Download CV"
                 className="btn-orangebg"

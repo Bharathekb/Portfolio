@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header">
       <nav className="navbar navbar-expand-lg custom-navbar">
-        <div className="container py-2 px-0">
+        <div className="container py-2">
           <a className="navbar-brand" href="https://bharathportfolio.rf.gd/">
             <img src="./assets/My-logo.png" alt="site logo" />
           </a>
@@ -35,7 +35,6 @@ function Header() {
                   href="#"
                 >
                   Home
-                  <hr />
                 </a>
               </li>
               <li className="nav-item">
@@ -44,7 +43,6 @@ function Header() {
                   href="https://bharathportfolio.rf.gd/blog/"
                 >
                   Blog
-                  <hr />
                 </a>
               </li>
             </ul>
