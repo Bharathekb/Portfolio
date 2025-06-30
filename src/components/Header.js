@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Button from "./Button";
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const handleBlogClick = () => {
     window.location.href = "https://bharathportfolio.rf.gd/blog/contact-us/";
+  };
+
+  const handleToggle = () => {
+    setMenuOpen(!menuOpen);
   };
   return (
     <div className="header">
@@ -15,16 +21,23 @@ function Header() {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            onClick={handleToggle}
+            aria-expanded={menuOpen ? "true" : "false"}
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon">
+              <img
+                src={
+                  menuOpen ? "./assets/Menu-close.svg" : "./assets/Menu-nav.svg"
+                }
+                alt="menu icon"
+              />
+            </span>
           </button>
           <div
-            className="collapse navbar-collapse mt-3 mt-lg-0"
+            className={`collapse navbar-collapse mt-3 mt-lg-0 ${
+              menuOpen ? "show" : ""
+            }`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav m-auto d-block d-lg-flex">
@@ -45,8 +58,17 @@ function Header() {
                   Blog
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link F-500 " href="https://mitravan.rf.gd/">
+                  Mitravan
+                </a>
+              </li>
             </ul>
-            <Button text="Contact" onClick={handleBlogClick} />
+            <Button
+              text="Contact"
+              className="mt-3 mt-lg-0"
+              onClick={handleBlogClick}
+            />
           </div>
         </div>
       </nav>

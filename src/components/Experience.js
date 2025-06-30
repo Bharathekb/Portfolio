@@ -11,7 +11,7 @@ const Experience = () => {
               <div className="FS-24 mb-2">
                 <FontAwesomeIcon icon={faCalendarDays} size="2x" />
               </div>
-              <p className="FS-42">2+</p>
+              <p className="FS-42">3</p>
               <p className="FS-24">Years Of Experience</p>
             </div>
           </div>

@@ -20,8 +20,10 @@ const projectData = [
   },
   {
     id: 3,
-    name: "Portfolio",
-    desc: [],
+    name: "iTeleCenter",
+    desc: [
+      "iTeleCenter is a cloud-based virtual phone system designed primarily for entrepreneurs, small businesses, and professionals. It provides a professional phone presence without needing traditional hardware or landline systems.",
+    ],
     imgSrc: "../assets/Project3.png",
   },
 ];
@@ -80,10 +82,10 @@ function Projects() {
             <div className="mb-0 text-start">
               {Array.isArray(selectedProject.desc)
                 ? selectedProject.desc.map((paragraph, index) => (
-                  <p className="text-start" key={index}>
-                    {paragraph}
-                  </p>
-                ))
+                    <p className="text-start" key={index}>
+                      {paragraph}
+                    </p>
+                  ))
                 : selectedProject.desc && <p>{selectedProject.desc}</p>}
             </div>
           </div>
