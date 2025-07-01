@@ -25,6 +25,9 @@
   background-color: #ffffff;
   color: #000000;
 }
+.my-btnwidth{
+  width: 130px;
+}
 .btn-orangebg {
   background-color: #ffd416 !important;
   color: #000000 !important;

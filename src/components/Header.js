@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState} from "react";
 import "./Header.css";
 import Button from "./Button";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+   const [scrolled, setScrolled] = useState(false);
 
   const handleBlogClick = () => {
     window.location.href = "https://bharathportfolio.rf.gd/blog/contact-us/";
@@ -11,12 +12,32 @@ function Header() {
   const handleToggle = () => {
     setMenuOpen(!menuOpen);
   };
+   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 60) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div className="header">
+    <header className={`header fixed-top ${scrolled ? "White-header" : ""}`}>
       <nav className="navbar navbar-expand-lg custom-navbar">
-        <div className="container py-2">
+        <div className="container">
           <a className="navbar-brand" href="https://bharathportfolio.rf.gd/">
-            <img src="./assets/My-logo.png" alt="site logo" />
+           <img
+  src={
+    scrolled
+      ? "./assets/My-logo-black.png" 
+      : "./assets/My-logo-white.png" 
+  }
+  alt="site logo"
+/>
           </a>
           <button
             className="navbar-toggler"
@@ -72,7 +93,7 @@ function Header() {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 

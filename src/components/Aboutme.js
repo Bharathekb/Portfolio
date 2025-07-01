@@ -2,16 +2,16 @@ import React from "react";
 
 const Aboutme = () => {
   return (
-    <div>
-      <section className="about-me py-4 pb-3 pt-xl-5 pb-xl-0 mt-xl-5 ">
+    <section className="Img-border Img-border2">
+      <div className="about-me py-4 pb-3 pt-xl-5 pb-xl-0 ">
         <div className="container">
           <div className="d-flex gap-5 flex-column PF-column-reverse">
             <div className="L-sidecontent">
-              <div className="Img-border Img-border1"></div>
+              <div className=""></div>
             </div>
             <div className="R-sidecontent">
               <div className="data-div">
-                <h2 className="my-heading">- Profile Summary</h2>
+                <h2 className="my-heading orange-color">- Profile Summary</h2>
                 <p className="my-para mb-3">
                   <span className="F-600">Name:</span> Bharath chandra
                 </p>
@@ -56,16 +56,16 @@ const Aboutme = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="about-me py-4 py-xl-5 FA-bg">
+      </div>
+      <div className="about-me py-4 py-xl-5">
         <div className="container">
           <div className="d-flex gap-5 flex-column">
             <div className="L-sidecontent">
-              <div className="Img-border Img-border2"></div>
+              <div className=""></div>
             </div>
             <div className="R-sidecontent">
               <div className="data-div">
-                <h2 className="my-heading">- About Me</h2>
+                <h2 className="my-heading orange-color ">- About Me</h2>
                 <p className="my-para mb-3">
                   <span className="F-600">Name:</span> Ekboti Bharath Chandra
                 </p>
@@ -108,8 +108,8 @@ const Aboutme = () => {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

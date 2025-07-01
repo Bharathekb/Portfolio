@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: Inter;
 }
+.overflow-H{
+  overflow: hidden;
+}
 /* Custom Scrollbar for Webkit Browsers (Chrome, Safari, Edge) */
 .custom-scroll {
   overflow-y: scroll;
@@ -67,7 +70,7 @@ body {
 }
 
 .Myline {
-  margin-top: 1px solid #d1d1d1;
+  border-top: 1px solid #d1d1d1;
 }
 
 .container {
@@ -81,6 +84,7 @@ body {
   line-height: 143%;
   letter-spacing: -1.12px;
   font-weight: 700;
+font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .my-para {
@@ -104,20 +108,24 @@ body {
 }
 .My-bioleft .my-heading {
   color: #ffffff;
+  margin-bottom: 30px;
 }
-
-.My-bioright {
-  width: 600px;
-  height: 600px;
-  overflow: hidden;
+.My-bioleft,.My-bioright{
+  width: 50%;
 }
-
+.My-bioright{
+  width: 900px;
+  height:800px;
+}
 .My-bioright img {
   width: 100%;
+  float: right;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
+.My-pl50{
+  padding-left: 233px;
+}
 .orange-color {
   color: #ffd416 !important;
 }
@@ -132,20 +140,36 @@ body {
 }
 
 .Img-border {
+    position: relative;
   width: 100%;
-  height: 750px;
+  height: auto;
   background-size: cover;
   overflow: hidden;
   background-position: center;
+  background-attachment: fixed;
+    z-index: 1;
 }
-.Img-border img {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.Img-border::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.Img-border h2,.Img-border h3{
+text-shadow: 1px 1px 2px black;
+color: #FAFAFA;
+}
+.Img-border p{
+color: #FAFAFA;
+text-shadow: 1px 1px 2px black;
 }
 .Img-border1 {
   background-image: url(../public/assets/Profile-summary-min.jpg);
+  background-position: top;
 }
 .Img-border2 {
-  background-image: url(../public/assets/My-pic.jpg);
+  background-image: url(../public/assets/My-P1.jpg);
   background-position: top;
 }
 .img-position {

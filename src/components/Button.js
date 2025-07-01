@@ -9,7 +9,7 @@ import "./Button.css";
 // };
 const Button = ({ text, onClick, type = "button", className = "" }) => {
   return (
-    <button type={type} onClick={onClick} className={`my-btn ${className}`}>
+    <button type={type} onClick={onClick} className={`my-btn my-btnwidth ${className}`}>
       {text}
     </button>
   );

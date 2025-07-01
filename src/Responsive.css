@@ -1,7 +1,15 @@
+@media (max-width: 1800px) {
+  .My-pl50 {
+    padding-left: 178px;
+}
+}
 @media (max-width: 1600px) {
   .container {
     max-width: 85%;
   }
+      .My-pl50 {
+        padding-left: 140px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -12,12 +20,15 @@
 
   .my-para {
     font-size: 18px;
-    list-style: 28px;
+    line-height: 28px;
   }
-
-  .Img-border {
-    height: 750px;
-  }
+  .My-pl50{
+  padding-left: 100px;
+}
+.My-bioright{
+  width: 600px;
+  height:600px;
+}
 }
 
 @media (max-width: 1024px) {
@@ -61,11 +72,6 @@
   .L-sidecontent,
   .R-sidecontent {
     width: 100%;
-  }
-
-  .Img-border {
-    width: 69%;
-    height: 660px;
   }
 
   .FS-24 {

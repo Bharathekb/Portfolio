@@ -6,9 +6,8 @@ const Skills = () => {
       <div className="container">
         <h2 className="heading-2 text-center F-600 mb-5">My Skills</h2>
         <p className="my-para text-center mb-4">
-          I'm Capable to Build Respnsive Websites Using Html, CSS, Bootstrap And
-          I Can Validate Login Forms Using Javascript Also I Can Store Form Data
-          In Database Using Php
+          I'm capable of building fully responsive websites using HTML, CSS, and Bootstrap.
+          I can also validate login forms and enhance interactivity using JavaScript.
         </p>
         <Progressbar />
       </div>
