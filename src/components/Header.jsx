@@ -1,9 +1,9 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import Button from "./Button";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-   const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleBlogClick = () => {
     window.location.href = "https://bharathportfolio.rf.gd/blog/contact-us/";
@@ -12,7 +12,7 @@ function Header() {
   const handleToggle = () => {
     setMenuOpen(!menuOpen);
   };
-   useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 60) {
         setScrolled(true);
@@ -27,17 +27,23 @@ function Header() {
   }, []);
   return (
     <header className={`header fixed-top ${scrolled ? "White-header" : ""}`}>
-      <nav className="navbar navbar-expand-lg custom-navbar">
+   <nav
+  className={`navbar navbar-expand-lg custom-navbar ${
+    menuOpen && !scrolled ? "bg-black" : ""
+  }`}
+>
+
+
         <div className="container">
           <a className="navbar-brand" href="https://bharathportfolio.rf.gd/">
-           <img
-  src={
-    scrolled
-      ? "./assets/My-logo-black.png" 
-      : "./assets/My-logo-white.png" 
-  }
-  alt="site logo"
-/>
+            <img
+              src={
+                scrolled
+                  ? "./assets/My-logo-black.png"
+                  : "./assets/My-logo-white.png"
+              }
+              alt="site logo"
+            />
           </a>
           <button
             className="navbar-toggler"
@@ -49,16 +55,21 @@ function Header() {
             <span className="navbar-toggler-icon">
               <img
                 src={
-                  menuOpen ? "./assets/Menu-close.svg" : "./assets/Menu-nav.svg"
+                  menuOpen
+                    ? (scrolled
+                      ? "./assets/Menu-close-black.svg"
+                      : "./assets/Menu-close-white.svg")
+                    : (scrolled
+                      ? "./assets/Menu-nav-black.svg"
+                      : "./assets/Menu-nav-white.svg")
                 }
                 alt="menu icon"
               />
             </span>
           </button>
           <div
-            className={`collapse navbar-collapse mt-3 mt-lg-0 ${
-              menuOpen ? "show" : ""
-            }`}
+            className={`collapse navbar-collapse mt-3 mt-lg-0 ${menuOpen ? "show" : ""
+              }`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav m-auto d-block d-lg-flex">

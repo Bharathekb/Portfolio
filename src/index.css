@@ -3,20 +3,25 @@ body {
   padding: 0;
   font-family: Inter;
 }
-.overflow-H{
+
+.overflow-H {
   overflow: hidden;
 }
 
 
 /* Keyframes for bounce effect */
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-15px);
   }
 }
+
 /* Custom Scrollbar for Webkit Browsers (Chrome, Safari, Edge) */
 .custom-scroll {
   overflow-y: scroll;
@@ -81,7 +86,7 @@ body {
 }
 
 .Myline {
-    border-top: 1px solid #d1d1d1;
+  border-top: 1px solid #d1d1d1;
 }
 
 .container {
@@ -95,8 +100,9 @@ body {
   line-height: 143%;
   letter-spacing: -1.12px;
   font-weight: 700;
-font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
+
 .heading-2 {
   color: #18191f;
   font-size: 36px;
@@ -112,6 +118,7 @@ font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 143%;
   letter-spacing: -1.12px;
 }
+
 .my-para {
   color: #535862;
   font-family: Inter;
@@ -128,29 +135,37 @@ font-family: "Plus Jakarta Sans", sans-serif;
 .Gray-bg {
   background-color: #f8f9fb;
 }
+
 .FA-bg {
   background-color: #fafafa;
 }
+
 .My-bioleft .my-heading {
   color: #ffffff;
   margin-bottom: 30px;
 }
-.My-bioleft,.My-bioright{
+
+.My-bioleft,
+.My-bioright {
   width: 50%;
 }
-.My-bioright{
+
+.My-bioright {
   width: 900px;
-  height:800px;
+  height: 800px;
 }
+
 .My-bioright img {
   width: 100%;
   float: right;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.My-pl50{
+
+.My-pl50 {
   padding-left: 233px;
 }
+
 .orange-color {
   color: #ffd416 !important;
 }
@@ -165,38 +180,49 @@ font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .Img-border {
-    position: relative;
+  position: relative;
   width: 100%;
   height: auto;
   background-size: cover;
   overflow: hidden;
   background-position: center;
   background-attachment: fixed;
-    z-index: 1;
+  z-index: 1;
 }
+
 .Img-border::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
+
 .Img-border1 {
   background-image: url(../public/assets/My-pic.jpg);
   background-position: top;
 }
+
 .img-position {
   position: absolute;
 }
-.Img-border h2,.Img-border h3{
+
+.Img-border h2,
+.Img-border h3 {
   color: #FFF;
 }
+
 .Img-border p {
-    color: #c7ced9;
+  color: #c7ced9;
 }
-.Img-border p span{
-     color: #c7ced9;
+
+.Img-border p span {
+  color: #c7ced9;
 }
+
 .box-shadow {
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -207,37 +233,41 @@ font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .Ex-box {
-      margin: 5px 0;
+  margin: 5px 0;
   padding: 25px 20px;
   background: rgba(0, 0, 0, 0.4);
-    border-radius: 6px;
-    min-height: 170px;
-    -webkit-transition: all 400ms linear;
-    -o-transition: all 400ms linear;
-    transition: all 400ms linear;
+  border-radius: 6px;
+  min-height: 170px;
+  -webkit-transition: all 400ms linear;
+  -o-transition: all 400ms linear;
+  transition: all 400ms linear;
 }
 
-.Ex-box .My-icon{
-    color: #ffd416;
-margin-bottom: 16px;
- transition: all 400ms linear;
+.Ex-box .My-icon {
+  color: #ffd416;
+  margin-bottom: 16px;
+  transition: all 400ms linear;
 }
-.Ex-box h3{
-      font-size: 36px;
-    color: #fff;
-    margin: 5px 0;
+
+.Ex-box h3 {
+  font-size: 36px;
+  color: #fff;
+  margin: 5px 0;
 }
-.Ex-box p{
+
+.Ex-box p {
   color: #FFF;
-  font-size:16px;
+  font-size: 16px;
   margin-bottom: 0;
 }
-.Ex-box:hover{
-      background-color: #ffae2c;
-        animation: bounce 0.6s;
+
+.Ex-box:hover {
+  background-color: #ffae2c;
+  animation: bounce 0.6s;
 
 }
-.Ex-box:hover .My-icon{
+
+.Ex-box:hover .My-icon {
   color: #000;
   transform: translateY(-14px);
   -webkit-transform: translateY(-14px);
@@ -245,6 +275,7 @@ margin-bottom: 16px;
   -ms-transform: translateY(-14px);
   -o-transform: translateY(-14px);
 }
+
 .My-card {
   padding: 0;
   border-radius: 12px;
@@ -252,6 +283,7 @@ margin-bottom: 16px;
   background: #fff;
   box-shadow: 1px 0 6px 2px #0000001c;
 }
+
 .My-card-header {
   height: 240px;
   overflow: hidden;
@@ -264,16 +296,18 @@ margin-bottom: 16px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.My-card-header:hover > img {
+.My-card-header:hover>img {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
 }
+
 .My-card-body {
   padding: 8px 20px 8px 20px;
 }
+
 /* Modal Styles */
 .My-modal {
   display: flex;
@@ -286,15 +320,15 @@ margin-bottom: 16px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
-  opacity: 0; 
-  visibility: hidden; 
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s 0.3s;
 }
 
 .My-modal.open {
   opacity: 1;
-  visibility: visible; 
-  transition: opacity 0.3s ease; 
+  visibility: visible;
+  transition: opacity 0.3s ease;
 }
 
 .My-modal-content {
@@ -331,25 +365,39 @@ margin-bottom: 16px;
   cursor: pointer;
   color: #000;
 }
+
 .my-row-reverse {
   flex-direction: row-reverse;
 }
-.data-div{
-   background: rgba(0, 0, 0, 0.5);
-    padding:32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    transition: all 0.3s ease;
+
+.data-div {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.6s ease-out;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
 }
-.Experience{
-background: url(../public/assets/EXP-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+
+.data-div.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
-.bg-overlay{
-    background: rgba(0, 0, 0, 0.2);
+.Experience {
+  background: url(../public/assets/EXP-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-overlay {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 

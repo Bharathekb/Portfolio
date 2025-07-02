@@ -77,11 +77,6 @@
   .FS-24 {
     font-size: 18px;
   }
-
-  .Ex-box {
-    margin: 20px 50px;
-  }
-
   .My-modal-content {
     padding: 20px;
   }
@@ -100,6 +95,13 @@
   .container {
     max-width: 95%;
   }
+  .My-pl50 {
+        padding-left: 40px;
+    }
+    #navbarSupportedContent{
+              height: 80vh;
+        overflow: auto;
+    }
 }
 @media (max-width: 767px) {
   .flexcolumn {
@@ -132,7 +134,6 @@
 
   .Img-border {
     width: 100%;
-    height: 850px;
   }
 
   .custom-navbar .navbar-nav .nav-link {
@@ -150,14 +151,5 @@
 
   .my-heading {
     font-size: 28px;
-  }
-
-  .Img-border {
-    width: 100%;
-    height: 469px;
-  }
-
-  .Ex-box {
-    margin: 10px 20px;
   }
 }

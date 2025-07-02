@@ -1,22 +1,15 @@
 import React from "react";
-import useScrollAnimation from "../hooks/useScrollAnimation"; // adjust path
 
 const Aboutme = () => {
-  const [ref1, show1] = useScrollAnimation();
-  const [ref2, show2] = useScrollAnimation();
-
   return (
     <section className="Img-border Img-border1">
-      <div className="about-me py-5">
+      <div className="about-me py-4 py-xl-5">
         <div className="container">
           <div className="d-flex gap-5 PF-column-reverse flex-column ABT-box">
             <div className="L-sidecontent">
-              <div
-                ref={ref1}
-                className={`data-div ${show1 ? "animate" : ""}`}
-              >
-                <h2 className="my-heading mb-3">Profile Summary</h2>
-               <p className="my-para mb-2">
+              <div className="data-div">
+                 <h2 className="my-heading mb-3">Profile Summary</h2>
+                <p className="my-para mb-2">
                   <span className="F-600">Name:</span> Bharath chandra
                 </p>
                   <p className="my-para mb-3">
@@ -53,11 +46,8 @@ const Aboutme = () => {
               </div>
             </div>
             <div className="R-sidecontent">
-              <div
-                ref={ref2}
-                className={`data-div ${show2 ? "animate" : ""}`}
-              >
-                <h2 className="my-heading mb-3">About Me</h2>
+               <div className="data-div">
+                <h2 className="my-heading  mb-3">About Me</h2>
                 <div className="mb-4">
                   <h3 className="heading-3 F-600">Academic Background</h3>
                   <hr className="Myline" />
