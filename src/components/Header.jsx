@@ -77,7 +77,7 @@ function Header() {
                 <a
                   className="nav-link active F-500"
                   aria-current="page"
-                  href="#"
+                  href="https://bharathportfolio.rf.gd/"
                 >
                   Home
                 </a>
@@ -88,6 +88,14 @@ function Header() {
                   href="https://bharathportfolio.rf.gd/blog/"
                 >
                   Blog
+                </a>
+              </li>
+                 <li className="nav-item">
+                <a
+                  className="nav-link F-500 "
+                  href="/resume"
+                >
+                  Resume
                 </a>
               </li>
               <li className="nav-item">

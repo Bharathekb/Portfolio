@@ -102,6 +102,10 @@
               height: 80vh;
         overflow: auto;
     }
+     .RSM-Mainbox {
+    width: 90%;
+    padding: 24px;
+  }
 }
 @media (max-width: 767px) {
   .flexcolumn {
@@ -141,6 +145,16 @@
   }
   .My-bioleft {
     text-align: center;
+  }
+  .RSM-Mainbox {
+    width: 100%;
+    padding: 14px;
+  }
+  .RSM-body-left{
+    width: 70%;
+  }
+  .RSM-body-right{
+    width: 30%;
   }
 }
 

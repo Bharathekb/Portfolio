@@ -1,3 +1,22 @@
+:root {
+  --my-font: Inter;
+  --my-h-blackcolor: #18191f;
+  --my-h-whitecolor: #ffffff;
+  --my-blackbg: #030406;
+  --my-graybg: #f8f9fb;
+  --my-fabg: #fafafa;
+  --my-paracolor: #535862;
+  --RSM-border:1px solid #939393;
+  --blue-color:#235fa5;
+  --Gergia-font:"Noto Sans Georgian", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -94,7 +113,7 @@ body {
 }
 
 .my-heading {
-  color: #18191f;
+  color: var(--my-h-blackcolor);
   font-size: 52px;
   font-style: normal;
   line-height: 143%;
@@ -104,7 +123,7 @@ body {
 }
 
 .heading-2 {
-  color: #18191f;
+  color: var(--my-h-blackcolor);
   font-size: 36px;
   font-style: normal;
   line-height: 143%;
@@ -112,7 +131,7 @@ body {
 }
 
 .heading-3 {
-  color: #18191f;
+  color: var(--my-h-blackcolor);
   font-size: 20px;
   font-style: normal;
   line-height: 143%;
@@ -120,7 +139,7 @@ body {
 }
 
 .my-para {
-  color: #535862;
+  color: var(--my-paracolor);
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -129,15 +148,15 @@ body {
 }
 
 .Black-bg {
-  background-color: #030406;
+  background-color: var(--my-blackbg);
 }
 
 .Gray-bg {
-  background-color: #f8f9fb;
+  background-color: var(--my-graybg);
 }
 
 .FA-bg {
-  background-color: #fafafa;
+  background-color: var(--my-fabg);
 }
 
 .My-bioleft .my-heading {
@@ -388,6 +407,7 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
 .Experience {
   background: url(../public/assets/EXP-bg.jpg);
   background-repeat: no-repeat;
@@ -400,5 +420,39 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
+/* Resume css */
+.RSM-Mainbox {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--Gergia-font);
+  border: 6px solid #ffffff;
+    box-shadow: 1px 1px 4px 3px #cccccc3d;
+}
 
-
+.RSM-subhead {
+  color: var(--my-h-blackcolor);
+  font-size: 16px;
+  line-height: 24px;
+}
+.RSM-body-head{
+  padding: 0 0 16px 0;
+  margin-bottom: 1rem;
+  border-bottom: var(--RSM-border);
+}
+.RSM-body-head h2{
+  color: var(--blue-color);
+}
+.RSM-body p{
+  color:var(--my-paracolor);
+  font-size: 16px;
+  line-height: 24px;
+}
+.My-list li{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--my-paracolor);
+  padding: 5px 0;
+}
