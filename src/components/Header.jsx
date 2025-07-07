@@ -93,7 +93,7 @@ function Header() {
                  <li className="nav-item">
                 <a
                   className="nav-link F-500 "
-                  href="/resume"
+                  href="https://bharathportfolio.rf.gd/resume"
                 >
                   Resume
                 </a>
