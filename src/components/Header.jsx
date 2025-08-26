@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import "./Header.css";
 import Button from "./Button";
 function Header() {
@@ -27,11 +28,10 @@ function Header() {
   }, []);
   return (
     <header className={`header fixed-top ${scrolled ? "White-header" : ""}`}>
-   <nav
-  className={`navbar navbar-expand-lg custom-navbar ${
-    menuOpen && !scrolled ? "bg-black" : ""
-  }`}
->
+      <nav
+        className={`navbar navbar-expand-lg custom-navbar ${menuOpen && !scrolled ? "bg-black" : ""
+          }`}
+      >
 
 
         <div className="container">
@@ -74,13 +74,7 @@ function Header() {
           >
             <ul className="navbar-nav m-auto d-block d-lg-flex">
               <li className="nav-item">
-                <a
-                  className="nav-link active F-500"
-                  aria-current="page"
-                  href="https://bharathportfolio.rf.gd/"
-                >
-                  Home
-                </a>
+                <Link to="/" className="nav-link active F-500">Home</Link>
               </li>
               <li className="nav-item">
                 <a
@@ -90,13 +84,9 @@ function Header() {
                   Blog
                 </a>
               </li>
-                 <li className="nav-item">
-                <a
-                  className="nav-link F-500 "
-                  href="https://bharathportfolio.rf.gd/resume"
-                >
-                  Resume
-                </a>
+              <li className="nav-item">
+
+                <Link to="/resume" className="nav-link F-500">Resume</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link F-500 " href="https://mitravan.rf.gd/">
